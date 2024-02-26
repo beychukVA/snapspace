@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+/* Styles for range slider */
+.rc-slider-mark {
+  top: -55px !important;
+}
+@media (max-width: 640px) {
+  .rc-slider-mark {
+    top: -35px !important;
+  }
+}
+.rc-slider-step {
+  display: none !important;
+}
+.rc-slider-mark-text:first-child {
+  transform: translateX(0) !important;
+}
+.rc-slider-mark-text:last-child {
+  transform: translateX(-100%) !important;
+}
+.rc-slider-mark-text svg {
+  opacity: 0.3;
+}
+.rc-slider-mark-text.rc-slider-mark-text-active svg {
+  opacity: 1;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #bdbdbd #fafafa;
+  }
+
+  /* Chrome, Edge и Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #fafafa;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd;
+    border-radius: 20px;
+    border: 3px solid #fafafa;
+  }
+}
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */

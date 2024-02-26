@@ -1,0 +1,31 @@
+.bm-burger-button {
+  display: none;
+}
+
+.bm-item-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bm-item:focus-visible {
+  outline: none;
+}
+
+.bm-cross-button {
+  display: none;
+}
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 0;
+}
+
+.bm-menu {
+  background: #fce72d;
+  padding: 42px 36px 47px 36px;
+}
+
+.bm-overlay {
+  background: transparent !important;
+}

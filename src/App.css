@@ -1,0 +1,57 @@
+:root {
+  --blue-dark: #1f2c56;
+  --blue-light-300: #c6d6ff;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+img,
+a {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.type-dark.place-top {
+  background-color: var(--blue-light-300);
+  padding: 11px 12px;
+  font-size: 12px;
+  color: var(--blue-dark);
+}
+
+.type-dark.place-top::after {
+  border-top-color: var(--blue-light-300) !important;
+}
+
+.type-dark.place-top span {
+  padding: 0;
+  text-align: left;
+}
+
+.animated-line {
+  width: 1px;
+  height: 0;
+  background: #1f2c56;
+  animation: line-down 3s ease-in-out forwards;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.noScrollBar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.noScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes line-down {
+  to {
+    height: 100%;
+  }
+}
